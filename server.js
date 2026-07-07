@@ -3,7 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import Groq from "groq-sdk";
 
-dotenv.config();
+dotenv.config({ override: true });
 
 const app = express();
 
