@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyPilot AI - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+    <h2>StudyPilot AI</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chat.html">AI Tutor</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard">
+
+    <h1>Welcome!</h1>
+    <p>Create your personalized AI study plan.</p>
+
+    <div class="planner-card">
+
+        <label>Subjects</label>
+        <input type="text" id="subjects" placeholder="Example: DBMS, Java, AI">
+
+        <label>Exam Date</label>
+        <input type="date" id="examDate">
+
+        <label>Daily Study Hours</label>
+        <input type="number" id="hours" placeholder="Example: 3">
+
+        <button id="generateBtn">
+            Generate Study Plan
+        </button>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <a href="chat.html" class="feature-card">
+            <h3>AI Tutor</h3>
+            <p>Ask questions and get explanations.</p>
+        </a>
+
+        <a href="quiz.html" class="feature-card">
+            <h3>Quiz Generator</h3>
+            <p>Test your knowledge.</p>
+        </a>
+
+        <a href="about.html" class="feature-card">
+            <h3>About</h3>
+            <p>Learn about the project.</p>
+        </a>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

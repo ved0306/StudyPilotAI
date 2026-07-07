@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz Generator</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>StudyPilot AI</h2>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="studyplan.html">Study Plan</a></li>
+<li><a href="chat.html">AI Tutor</a></li>
+
+</ul>
+
+</nav>
+
+<div class="dashboard">
+
+<h1>AI Quiz Generator</h1>
+
+<div class="planner-card">
+
+<label>Subject</label>
+
+<input
+type="text"
+id="subject"
+placeholder="Example: DBMS">
+
+<label>Topic</label>
+
+<input
+type="text"
+id="topic"
+placeholder="Example: Normalization">
+
+<label>Number of Questions</label>
+
+<input
+type="number"
+id="count"
+value="5"
+min="1"
+max="20">
+
+<button id="generateQuiz">
+
+Generate Quiz
+
+</button>
+
+</div>
+
+<div id="quizArea"></div>
+
+</div>
+
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

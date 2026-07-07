@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan - StudyPilot AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <h2>StudyPilot AI</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="chat.html">AI Tutor</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+</nav>
+
+<div class="dashboard">
+
+    <h1>Your Study Plan</h1>
+
+    <div class="planner-card">
+
+        <p><strong>Subjects:</strong> <span id="subjectText"></span></p>
+
+        <p><strong>Exam Date:</strong> <span id="dateText"></span></p>
+
+        <p><strong>Study Hours:</strong> <span id="hourText"></span></p>
+
+        <hr>
+
+        <h3>AI Generated Plan</h3>
+
+        <div id="studyPlan">
+            Click the button below to generate your AI study plan.
+        </div>
+
+        <button id="generateAI">
+            Generate with AI
+        </button>
+        <button id="startAgent">Start AI Agent</button>
+
+    </div>
+
+</div>
+
+<script src="js/studyplan.js"></script>
+
+</body>
+</html>
