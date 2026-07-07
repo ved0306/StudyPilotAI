@@ -9,7 +9,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-console.log("API Key:", process.env.GROQ_API_KEY);
+console.log("All env keys:", Object.keys(process.env));
+console.log("GROQ_API_KEY:", process.env.GROQ_API_KEY);
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY
 });
