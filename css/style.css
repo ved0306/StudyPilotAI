@@ -426,3 +426,28 @@ margin-bottom:10px;
 font-size:18px;
 
 }
+.about{
+    padding:80px 10%;
+    background:#111827;
+    color:white;
+    text-align:center;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.about h2{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:1rem;
+}
+html{
+    scroll-behavior:smooth;
+}
