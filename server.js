@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
+console.log("API Key:", process.env.GROQ_API_KEY);
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY
 });
@@ -300,6 +300,7 @@ app.post("/start-agent", async (req, res) => {
     }
 
 });
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
