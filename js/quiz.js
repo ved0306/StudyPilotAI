@@ -25,7 +25,7 @@ async function generateQuiz() {
 
     try {
 
-        const response = await fetch("http://localhost:3000/quiz", {
+        const response = await fetch("https://studypilotai-production.up.railway.app/quiz", {
 
             method: "POST",
 

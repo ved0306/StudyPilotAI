@@ -18,7 +18,7 @@ ${question}
 
 document.getElementById("question").value="";
 
-const response=await fetch("http://localhost:3000/chat",{
+const response=await fetch("https://studypilotai-production.up.railway.app/chat",{
 
 method:"POST",
 

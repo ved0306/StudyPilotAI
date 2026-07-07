@@ -18,7 +18,7 @@ document.getElementById("generateAI").addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch("http://localhost:3000/studyplan", {
+        const response = await fetch("https://studypilotai-production.up.railway.app/studyplan", {
 
             method: "POST",
 
@@ -56,7 +56,7 @@ async function startAgent() {
 
     const studyPlan = document.getElementById("studyPlan").innerHTML;
 
-    const response = await fetch("http://localhost:3000/start-agent", {
+    const response = await fetch("https://studypilotai-production.up.railway.app/start-agent", {
 
         method: "POST",
 
