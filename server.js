@@ -20,9 +20,16 @@ app.post("/studyplan", async (req, res) => {
     try {
 
         const { subjects, examDate, hours } = req.body;
+        const today = new Date();
+const exam = new Date(examDate);
 
-        const prompt = `
+const diffTime = exam - today;
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+       const prompt = `
 You are an expert study mentor.
+
+Today's date is ${today.toISOString().split("T")[0]}.
 
 Create a study plan.
 
@@ -32,16 +39,15 @@ ${subjects}
 Exam Date:
 ${examDate}
 
+Remaining Time:
+${diffDays} days
+
 Daily Study Hours:
 ${hours}
 
-Give:
-1. Daily schedule
-2. Topic order
-3. Revision strategy
-4. Tips
-
-Format the response in HTML using headings, bullet points and paragraphs.
+Create a realistic study plan based on the remaining days.
+Do not guess the remaining time.
+Format the response in HTML using headings, paragraphs and bullet points.
 `;
 
         const completion = await groq.chat.completions.create({
