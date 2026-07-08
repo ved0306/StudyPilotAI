@@ -57,6 +57,11 @@ async function startAgent() {
 
     const studyPlan = document.getElementById("studyPlan").innerHTML;
 
+    if (!email || !email.includes("@")) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
     const response = await fetch("https://studypilotai-production.up.railway.app/start-agent", {
 
         method: "POST",
