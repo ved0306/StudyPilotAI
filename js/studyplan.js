@@ -1,3 +1,4 @@
+const email = sessionStorage.getItem("email");
 const subjects = sessionStorage.getItem("subjects");
 const examDate = sessionStorage.getItem("examDate");
 const hours = sessionStorage.getItem("hours");
@@ -65,7 +66,7 @@ async function startAgent() {
         },
 
         body: JSON.stringify({
-
+            email,
             subjects,
             examDate,
             hours,
